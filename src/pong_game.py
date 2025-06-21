@@ -182,7 +182,7 @@ class AIPlayer:
 class Game:
     def __init__(self):
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption("Colorful Pong Game")
+        pygame.display.set_caption("Pong")
         self.clock = pygame.time.Clock()
         self.font = pygame.font.Font(None, 48)
         self.big_font = pygame.font.Font(None, 72)
@@ -339,7 +339,7 @@ class Game:
         """Draw name input screen"""
         self.screen.fill(DARK_BLUE)
         
-        title_text = self.big_font.render("COLORFUL PONG", True, NEON_YELLOW)
+        title_text = self.big_font.render("PONG", True, NEON_YELLOW)
         title_rect = title_text.get_rect(center=(SCREEN_WIDTH // 2, 150))
         self.screen.blit(title_text, title_rect)
         

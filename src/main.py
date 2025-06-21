@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Colorful Pong Game
+Pong Game
 A vibrant and modern take on the classic Pong game.
 """
 

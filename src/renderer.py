@@ -21,7 +21,7 @@ class Renderer:
         """Draw name input screen with modern colors"""
         self.screen.fill(DARK_SLATE)
         
-        title_text = self.big_font.render("COLORFUL PONG", True, GOLDEN_YELLOW)
+        title_text = self.big_font.render("PONG", True, GOLDEN_YELLOW)
         title_rect = title_text.get_rect(center=(SCREEN_WIDTH // 2, 150))
         self.screen.blit(title_text, title_rect)
         

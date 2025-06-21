@@ -14,7 +14,7 @@ class Game:
         pygame.mixer.init()
         
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption("Colorful Pong Game")
+        pygame.display.set_caption("Pong")
         self.clock = pygame.time.Clock()
         
         # Initialize managers
