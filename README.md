@@ -1,4 +1,4 @@
-# Colorful Pong Game 🏓
+# Pong Game 🏓
 
 A modern and vibrant take on the classic Pong game, featuring sophisticated colors, smooth animations, intelligent AI opponent, and dynamic sound effects.
 
@@ -62,7 +62,7 @@ A modern and vibrant take on the classic Pong game, featuring sophisticated colo
 
 3. **Run the game**
    ```bash
-   python3 main.py
+   python3 src/main.py
    ```
 
 ### Alternative Installation (Using pip)
@@ -73,15 +73,15 @@ python3 -m venv game_env
 source game_env/bin/activate
 
 # Install dependencies
-pip install pygame>=2.0.0 numpy>=1.20.0
+pip install -r src/requirements.txt
 
 # Run game
-python3 main.py
+python3 src/main.py
 ```
 
 ## How to Play 🎯
 
-1. **Launch**: Run `python3 main.py`
+1. **Launch**: Run `python3 src/main.py`
 2. **Enter Name**: Type your name and press ENTER
 3. **Control Paddle**: Use W/S keys, arrow keys, or mouse to move your paddle
 4. **Score Points**: Hit the ball past the AI's paddle
@@ -112,18 +112,22 @@ python3 main.py
 ### File Structure
 ```
 game-project/
-├── main.py              # Entry point - launches the game
-├── game.py              # Main game controller and state management
-├── constants.py         # Game constants and modern color definitions
-├── paddle.py            # Paddle class with movement and rendering
-├── ball.py              # Ball physics, movement, and color cycling
-├── ai_player.py         # AI opponent logic and behavior
-├── sound_manager.py     # Audio effects generation and playback
-├── score_manager.py     # High score persistence and management
-├── input_handler.py     # Keyboard and mouse input processing
-├── renderer.py          # All screen rendering and drawing functions
-├── requirements.txt     # Python dependencies (for pip installation)
+├── src/                 # Main application code
+│   ├── main.py              # Entry point - launches the game
+│   ├── game.py              # Main game controller and state management
+│   ├── constants.py         # Game constants and modern color definitions
+│   ├── paddle.py            # Paddle class with movement and rendering
+│   ├── ball.py              # Ball physics, movement, and color cycling
+│   ├── ai_player.py         # AI opponent logic and behavior
+│   ├── sound_manager.py     # Audio effects generation and playback
+│   ├── score_manager.py     # High score persistence and management
+│   ├── input_handler.py     # Keyboard and mouse input processing
+│   ├── renderer.py          # All screen rendering and drawing functions
+│   ├── pong_game.py         # Additional game logic
+│   └── requirements.txt     # Python dependencies (for pip installation)
 ├── README.md           # This documentation
+├── LICENSE             # Apache License 2.0
+├── .gitignore          # Git ignore rules
 └── high_scores.json    # Generated automatically for score storage
 ```
 
@@ -146,7 +150,7 @@ game-project/
 
 ## Color Customization 🎨
 
-The modern color palette can be customized in `constants.py`:
+The modern color palette can be customized in `src/constants.py`:
 
 ### Current Color Scheme
 ```python
@@ -213,7 +217,7 @@ Areas for contribution:
 
 ## License 📄
 
-This project is open source and available under the MIT License.
+This project is open source and available under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
 
 ## Credits 👏
 
@@ -224,4 +228,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Ready to play? Run `python3 main.py` and enjoy the modern Pong experience! 🏓✨**
+**Ready to play? Run `python3 src/main.py` and enjoy the modern Pong experience! 🏓✨**
